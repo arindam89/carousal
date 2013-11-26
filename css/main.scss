@@ -64,20 +64,19 @@ textarea {
     position: relative;
     list-style: none;
     width: 500px;
+    height: 300px;
     overflow: hidden;
 
   }
 
   .carousal-item {
     list-style: none;
-    float: left;
+    position:absolute;
+    left:0;
+    top:0;
     display: none;
     width: 500px;
     height: 300px;
-  }
-
-  .carousal-item.active {
-    display: inherit;
   }
 
 

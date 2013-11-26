@@ -1,0 +1,1 @@
+(function(e){var t=e(".carousal"),n="li",r=t.find(n),i={transition:500,duration:4e3};r.first().addClass("active");r.first().fadeIn(i.transition);setInterval(function(){var e=t.find(n+".active").index();r.eq(e).fadeOut(i.transition);r.eq(e).removeClass("active");e=e+1==r.length?0:e+1;r.eq(e).addClass("active");r.eq(e).fadeIn(i.transition)},i.transition+i.duration)})(jQuery);
