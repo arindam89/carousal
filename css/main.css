@@ -51,15 +51,18 @@ textarea {
 .carousal {
   position: relative;
   list-style: none;
-  width: 2000px; }
+  width: 500px;
+  overflow: hidden; }
 
 .carousal-item {
   list-style: none;
   float: left;
-  display: inline-block;
+  display: none;
   width: 500px;
-  height: 300px;
-  background-color: #eee; }
+  height: 300px; }
+
+.carousal-item.active {
+  display: inherit; }
 
 /* ==========================================================================
    Media Queries
