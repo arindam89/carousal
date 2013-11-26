@@ -60,24 +60,12 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-  .carousal {
-    position: relative;
-    list-style: none;
+.carousal {
     width: 500px;
     height: 300px;
-    overflow: hidden;
-
-  }
-
-  .carousal-item {
-    list-style: none;
-    position:absolute;
-    left:0;
-    top:0;
-    display: none;
-    width: 500px;
-    height: 300px;
-  }
+    overflow: auto;
+    margin: 0; padding: 0;
+}
 
 
 
