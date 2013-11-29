@@ -10,7 +10,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
-        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
 
         <!--[if lt IE 9]>
@@ -21,22 +21,61 @@
     <body>
 
         <div class="container">
+            <header>
+                <h1>My Awesome Carousal</h1>
+            </header>
             <div class="carousal-container">
-                <ul class="carousal">
-                    <li class="carousal-item"><img src="img/1.jpg" alt="Image 1"/></li>
-                    <li class="carousal-item"><img src="img/2.jpg" alt="Image 2"/></li>
-                    <li class="carousal-item"><img src="img/3.jpg" alt="Image 3"/></li>
-                    <li class="carousal-item"><img src="img/4.jpg" alt="Image 4"/></li>
+                <ul class="carousal" id="carousal1">
+                    <li class="carousal-item">
+                        <img src="img/1.jpg" alt="Image 1"/>
+                         <p class="caption">This is a caption 1</p>
+                    </li>
+                    <li class="carousal-item">
+                        <img src="img/2.jpg" alt="Image 2"/>
+                         <p class="caption">This is a caption 2</p>
+                    </li>
+                    <li class="carousal-item">
+                        <img src="img/3.jpg" alt="Image 3"/>
+                         <p class="caption">This is a caption 3</p>
+                    </li>
+                    <li class="carousal-item">
+                        <img src="img/4.jpg" alt="Image 4"/>
+                         <p class="caption">This is a caption 4</p>
+                    </li>
                 </ul>
             </div>
+                <ul class="carousal-pager" id="carousal1-pager">
+                  <li><a href="#"><img src="img/thumb_1.jpg" alt=""></a></li>
+                  <li><a href="#"><img src="img/thumb_2.jpg" alt=""></a></li>
+                  <li><a href="#"><img src="img/thumb_3.jpg" alt=""></a></li>
+                  <li><a href="#"><img src="img/thumb_4.jpg" alt=""></a></li>
+                </ul>
+                <div>
+                    <a href="#" class="button" id="full_screen">
+                        Full Screen
+                    </a>
+                    <a href="#" class="button" id="toggle_rotation">
+                        Toggle Rotation
+                    </a>
+                </div>
         </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
-
-        <script src="js/main-ck.js"></script>
+        <!-- Slider JS -->
+        <script src="js/lib/carousal.defaults.js"></script>
+        <script src="js/lib/helpers/carousal.transition.js"></script>
+        <script src="js/lib/helpers/carousal.fullscreen.js"></script>
+        <script src="js/lib/carousal.core.js"></script>
         <script type="text/javascript">
-            $('.carousal').carousal();
+            $("#carousal1").carousal({
+                    maxwidth: 600,
+                    manualControls: '#carousal1-pager',
+                    fullScreenId: "full_screen",
+                    toggleCycleId: "toggle_rotation",
+                    nav: true,
+                    speed: 800
+            });
         </script>
     </body>
 </html>
