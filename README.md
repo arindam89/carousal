@@ -23,5 +23,5 @@ For options refer to the ```js/lib/carousal.defaults.js```
 
 ![Carousal Image](http://s24.postimg.org/469ysveut/carousal.jpg?raw=true)
 
-Email me at arindampaul@gmail.com for any queries.
+Email me at arindampaul1989@gmail.com for any queries.
 
