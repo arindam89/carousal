@@ -12,9 +12,14 @@ Developing a simple carousal from scratch. This carousal supports CSS transition
 * Clean code which can be extended and modified very easily.
 * Before and after transition hooks where any custom function can be executed.
 
-Open the ```index.html``` and see the magic happening. 
+####Demo Link: [http://arindampaul.com/demos/carousal/](http://arindampaul.com/demos/carousal/)
+
+
+Download and open the ```index.html``` and see the magic happening. 
 
 For options refer to the ```js/lib/carousal.defaults.js```
+
+ 
 
 ![Carousal Image](http://s24.postimg.org/469ysveut/carousal.jpg?raw=true)
 
